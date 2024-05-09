@@ -53,10 +53,7 @@ app.get('/', (req,res) => {
     }
 })
 
-app.use((req,res) =>{
-    res.status(405)
-    res.send(`<h1>Error 405: FALHOU PORRA`);
-})
+
 app.use((req,res) => {
     res.status(404)
     res.send(`<h1>Error 404: Resource not found</h1>`);
