@@ -28,27 +28,20 @@ app.use(express.static('layout'));
 app.use('/view', express.static(path.join(__dirname, 'view')));
 app.set('views', path.join(__dirname, '/view'));
 
-app.post('/', (req,res) =>{
-    res.render('index');
-    
-});
-
-app.get('/', (req,res) => {
-    res.render('index');
-    
-})
-
-
 
 //Aplicativo
-app.get('/loading', (req,res) =>{
+app.all('/', (req,res) => {
+    res.render('index');
+})
+
+
+app.all('/loading', (req,res) => {
     res.render('loading');
 })
 
-app.post('/loading', (req,res) =>{
-    res.render('loading');
+app.all('/loading2', (req,res) =>{
+    res.render('cuidador');
 })
-
 
 app.use((req,res) => {
     res.status(404)

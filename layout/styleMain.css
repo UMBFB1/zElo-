@@ -34,15 +34,13 @@
 }
 
 .loading {
-    font-family: 'Gill Sans';
+    font-family: 'Tahoma';
     font-size: 20px;
     display: flex;
     position: relative;
-    top: -25px;
-    justify-content: center;
-    color: white ;
-    animation-name: load;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
+    top: 420px;
+    justify-content: center;    
+    color: rgb(255, 255, 255) ;
+    
 }
 
