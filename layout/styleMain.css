@@ -1,0 +1,48 @@
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+}
+
+.container {
+    width: 400px;
+    justify-content: center;
+}
+
+.progress {
+    background: rgb(46, 44, 44);
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.progress-bar{
+    height: 18px;
+    background-color: rgb(101, 37, 173);
+    border-radius: 30px;
+    animation-name: barra;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes barra{
+    0% {width: 0%;}
+    80% {width: 85%;
+    background-color: rgb(255, 251, 0);}
+    100% {width: 100%;
+    background-color: rgb(6, 204, 6);}
+}
+
+.loading {
+    font-family: 'Gill Sans';
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    top: -25px;
+    justify-content: center;
+    color: white ;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
