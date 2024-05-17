@@ -20,37 +20,33 @@ sequelize.authenticate().then(function(req,res){
 })
 
 //Conexão ao FrontEnd
-app.use(express.static('layout'));
-app.use(session({secret:'Aleatorio'}));
-app.use(bodyParser.urlencoded({extended: true}));
 app.engine('html', require('ejs').renderFile);
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(session({secret: 'Aleatorio'}));
 app.set('view engine', 'html');
-app.use('/layout', express.static(path.join(__dirname + 'layout')));
-app.set('main', path.join(__dirname + '/view'));
-app.set('view', path.join(__dirname +  '/view'));
-app.get('/', (req, res) => {
+app.use(express.static('layout'));
+app.use('/view', express.static(path.join(__dirname, 'view')));
+app.set('views', path.join(__dirname, '/view'));
+
+app.post('/', (req,res) =>{
     res.render('index');
-})
+    
+});
 
-//Aplicativo
-app.post('/', (req,res) => {
-    if(req.body.password == password && req.body.login == login ){
-        req.session.login = login;
-        res.render('main')
-
-    }else {
-        res.render('index');
-    }
+app.get('/', (req,res) => {
+    res.render('index');
     
 })
 
-app.get('/', (req,res) => {
-    if(req.session.login){
-        res.render('main');
-        console.log('O usuario legado é: ' + req.session.login)
-    }else{
-        res.render('index');
-    }
+
+
+//Aplicativo
+app.get('/loading', (req,res) =>{
+    res.render('loading');
+})
+
+app.post('/loading', (req,res) =>{
+    res.render('loading');
 })
 
 
