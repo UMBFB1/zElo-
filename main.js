@@ -29,7 +29,7 @@ app.use('/view', express.static(path.join(__dirname, 'view')));
 app.set('views', path.join(__dirname, '/view'));
 
 
-//Aplicativo
+//Aplicativo A
 app.all('/', (req,res) => {
     res.render('index');
 })
