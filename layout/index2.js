@@ -1,3 +1,3 @@
-setTimeout(function(){
-    window.location.href = 'loading2';
-}, 3000)
+//setTimeout(function(){
+   // window.location.href = 'loading2';
+//}, 3000)
