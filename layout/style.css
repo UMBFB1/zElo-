@@ -9,8 +9,20 @@ header {
     font-family: 'Open Sans';
     color: rgb(255, 255, 255);
     font-size: 20px;
-
    }
+
+   img {
+    position: absolute;
+    width: 146px;
+    height: 151px;
+    left: 19px;
+    top: -1px;
+    background: url(IMG-20230911-WA0050_1_-removebg-preview.png);
+   }
+ 
+
+
+
    span{
     font-size: 50px;
    }
