@@ -20,7 +20,7 @@
     color: rgb(255, 255, 255);
     left: auto;
     top: auto;
-    
+    flex-wrap: wrap;
 }
 .position {
     display: flex;
@@ -32,7 +32,7 @@
 .container {
     width: 400px;
     justify-content: center;
-    
+    flex-wrap: wrap;
     
 }
 

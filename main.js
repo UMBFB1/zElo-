@@ -29,17 +29,21 @@ app.use('/view', express.static(path.join(__dirname, 'view')));
 app.set('views', path.join(__dirname, '/view'));
 
 
-//Aplicativo A
+//Aplicativo 
 app.all('/', (req,res) => {
     res.render('index');
 })
 
 
-app.all('/loading', (req,res) => {
+app.all('/loadingCuidador', (req,res) => {
     res.render('loading');
 })
 
-app.all('/loading2', (req,res) =>{
+app.all('/loadingPreciso', (req,res) =>{
+    res.render('loading2')
+})
+
+app.all('/Cuidador', (req,res) =>{
     res.render('cuidador');
 })
 
