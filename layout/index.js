@@ -8,6 +8,8 @@ document.getElementById('loading2').addEventListener('click', function(){
     window.location.href= 'cuidador';
 })
 
-document.getElementById('somos').addEventListener('click', function(){
-    window.location.href= '#';
+const botao = document.getElementById('loading2').addEventListener('click', function(){
+    if(botao == this.click){
+        window.location.href = 'loadingCuidador'
+    }
 })

@@ -1,3 +1,3 @@
 setTimeout(function(){
-window.location.href = 'Cuidador';
+window.location.href = 'CadastroCuidador';
 }, 3000);

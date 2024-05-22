@@ -43,7 +43,7 @@ app.all('/loadingPreciso', (req,res) =>{
     res.render('loading2')
 })
 
-app.all('/Cuidador', (req,res) =>{
+app.all('/CadastroCuidador', (req,res) =>{
     res.render('cuidador');
 })
 
