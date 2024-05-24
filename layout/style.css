@@ -9,15 +9,18 @@ header {
     font-family: 'Open Sans';
     color: rgb(255, 255, 255);
     font-size: 20px;
+    flex-wrap: wrap;
    }
 
    img {
+    display: flex;
     position: absolute;
-    width: 146px;
-    height: 151px;
+    width: 220px;
+    height: 220px;
     left: 19px;
-    top: -1px;
+    top: 0;
     background: url(IMG-20230911-WA0050_1_-removebg-preview.png);
+    
    }
  
 
@@ -33,6 +36,7 @@ header {
     padding: 1rem;
     list-style-type: none;
     text-decoration: none;
+    flex-wrap: wrap;
   
    }
      
@@ -55,6 +59,7 @@ header {
     background: linear-gradient(20deg, #b701ff, #f551ab);
     border-radius: 20px;
     font-size: 20px;
+    flex-wrap: wrap;
     
     animation-name: troca;
     animation-duration: 2s;
