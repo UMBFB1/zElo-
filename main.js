@@ -2,23 +2,55 @@
 const express = require('express');
 const session = require('express-session');
 const app = express();
-const Sequelize = require('sequelize');
 const path = require('path');
 const bodyParser = require('body-parser');
-var password = 's123.';
-var login = 'adm@gmail'
+const db = require('./db');
+const { type } = require('os');
+const { STRING } = require('sequelize');
 
-//Conexão ao Banco de Dados
-const sequelize = new Sequelize('zElo', 'root', '', {
-    host: 'localhost',
-    dialect: 'mysql'
-})
-sequelize.authenticate().then(function(req,res){
-    console.log("Banco de dados conectado");
-}).catch(function(erro){
-    console.log("Falha na conexão, causa" + erro);
+
+//Cadastro Exemplo
+
+
+const Cuidador = db.sequelize.define('Cuidadore', {
+    CPF: {
+        type: db.Sequelize.INTEGER,
+        allowNull: false,
+        unique: true
+    },
+    nome: {
+        type: db.Sequelize.STRING,
+        allowNull: false
+    },
+    email: {
+        type: db.Sequelize.STRING,
+        allowNull: false,
+        unique: true
+    },
+    data_nascimento: {
+        type: db.Sequelize.DATE,
+        allowNull: false,
+    },
+    telefone:  {
+        type: db.Sequelize.STRING,
+        allowNull: false
+    },
+    experiencia: {
+        type: db.Sequelize.TEXT,
+        allowNull: false
+    },
+    habilidade: {
+        type: db.Sequelize.TEXT,
+        allowNull: false
+    },
+    curriculo: {
+        type: db.Sequelize.BLOB,
+    
+    }
 })
 
+
+Cuidador.sync({force: true})
 //Conexão ao FrontEnd
 app.engine('html', require('ejs').renderFile);
 app.use(bodyParser.urlencoded({extended:true}));

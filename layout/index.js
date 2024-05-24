@@ -5,11 +5,6 @@ document.getElementById('loading1').addEventListener('click',function(){
 })
 
 document.getElementById('loading2').addEventListener('click', function(){
-    window.location.href= 'cuidador';
+    window.location.href= 'loadingPreciso';
 })
 
-const botao = document.getElementById('loading2').addEventListener('click', function(){
-    if(botao == this.click){
-        window.location.href = 'loadingCuidador'
-    }
-})
