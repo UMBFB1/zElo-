@@ -1,87 +1,81 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Estilos para o header */
 header {
+    background: #4572E5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'Tahoma';
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    justify-content: center;
+    left: 0;
+   }
+
+   img {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    background-color: #4572E5;
-    color: #fff;
-    flex-wrap: wrap;
-}
-
-/* Estilos para o logotipo */
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-/* Estilos para a navegação */
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 0px;
+    top: 0;
+    background: url(IMG-20230911-WA0050_1_-removebg-preview.png);
     
-    nav ul li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-}
+   }
+ 
+   span{
+    font-size: 50px;
+   }
+   
+   header, nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    list-style-type: none;
+    text-decoration: none;
+    flex-wrap: wrap;
+  
+   }
+     
+   nav ul li {
+    margin-left: 60px;
+    text-decoration: none;
+    justify-content: center;
+    top: 12px;
+    display: flex;
+    position: relative;
+   }
 
-li {
+   li {
+    display: flex;
+    position: relative;
     cursor: pointer;
-}
-   button {
+    left: 20px;
+   }
+
+   .cuidador-btn {
     margin: 10px;
     display: flex;
-    top: -12px;
+    top: 0px;
     position: relative;
     color: white;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    background: linear-gradient(20deg, #f22C74, #ff004c);
+    background: #AA075F;
     border-radius: 20px;
-    font-size: 20px;
-    flex-wrap: wrap;
-    margin-left: 80px;
-    
-    animation-name: troca;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    
+    font-size: 18px;
+    margin-left: 30px;
    }
 
-
-
-   button:hover {
-    background: linear-gradient(90deg, #f7545c, #df0404, #be8181);
-   
+   .preciso-btn {
+    margin: 10px;
+    display: flex;
+    top: 0px;
+    position: relative;
+    color: white;
+    background: #F9AD3B;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-left: 10px;
    }
+
 
 
    
