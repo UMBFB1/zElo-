@@ -13,9 +13,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
+    padding: 25px;
+    background-color: #4572E5;
     color: #fff;
+    flex-wrap: wrap;
 }
 
 /* Estilos para o logotipo */
@@ -50,6 +51,10 @@ nav ul li a {
         margin-left: 0;
         margin-top: 10px;
     }
+}
+
+li {
+    cursor: pointer;
 }
    button {
     margin: 10px;
