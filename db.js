@@ -1,6 +1,6 @@
 //Banco de Dados
 const Sequelize = require('sequelize')
-const sequelize = new Sequelize('zElo', 'root', 'umbreongame2412', {
+const sequelize = new Sequelize('zElo', 'root', '', {
     host: 'localhost',
     dialect: 'mysql'
 })

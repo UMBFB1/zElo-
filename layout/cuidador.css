@@ -1,3 +1,6 @@
+body {
+    background-image: url(https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEUN%2BXd09ApYNXblLxcyViDcTe0WoFeyw0wVelKBD%2FdkW8SRVqKR79z8tRPxLeSQ17p7RbiU2pCWqZaj1e6KWeHDlIume1jXm%2FW37QUZh5b9xLxpfTFZx5BkoQzM3yQy3xdiimnl11hDBc6c753ROjgSq8Jl2o%2F20b%2FA%2BsztZ8Mj4qCKqqrbY4KmKRUzcHTt0V1amMriIztp0uAwI60ghDD8PySdORrppEPm%2F9C0E%2BZphP4rO%2FhBNv2Cl6VGIKTOKXhz6jwOLRvDezClGzTDQoZUW3GUUs3Ts7751qWbVKzx0G%2BPSfFHMfikk%2BXlM5sFrvPjdyoN5PfCnttZNbbhLsu38e2dUy3UkTID8N07eTsYC7QljJv8SCrT0ytb8MUfrlum2x9AIoVojXYlbpqGf9utOVpP%2BLAUekJGdMPBl7MAjTBd2ctHrcYadiDM8f%2FSppWLtaQAuiI43hsND4gy4C1Ag2kzhHnUlNvbQ2V9r4z7fNadBL3b8Rd%2BWDhxcbO77IggL6iz36hzcNFCa6d2AmrnUcPTbe8AzjlftlKr%2Bl4b1sekwr6wqZPC4BdnanKgJL2X&sz=w512);
+}
 header {
     background: #4572E5;
     position: fixed;
@@ -18,7 +21,7 @@ header {
     height: 150px;
     left: 0px;
     top: 0;
-    background: url(IMG-20230911-WA0050_1_-removebg-preview.png);
+
     
    }
  
