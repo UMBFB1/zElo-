@@ -5,7 +5,7 @@ const sequelize = new Sequelize('zElo', 'root', '', {
     dialect: 'mysql'
 })
 sequelize.authenticate().then(function(req,res){
-    console.log("Banco de dados conectado");
+    console.log(`Banco de dados conectado`);
 }).catch(function(erro){
     console.log("Falha na conexão, causa" + erro);
 })
