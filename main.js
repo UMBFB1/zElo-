@@ -5,9 +5,8 @@ const { type } = require('os');
 const { STRING } = require('sequelize');
 
 
-//Cadastro Exemplo
-
-
+//Criação de Tabelas
+    //Tabela Cuidador
 const Cuidador = db.sequelize.define('Cuidadore', {
     CPF: {
         type: db.Sequelize.INTEGER,
@@ -45,6 +44,7 @@ const Cuidador = db.sequelize.define('Cuidadore', {
     }
 })
 
+    //Tabela Responsavel
 const Responsavel = db.sequelize.define('Responsavei', {
     nome: {
         type: db.Sequelize.STRING,
@@ -77,7 +77,7 @@ const Responsavel = db.sequelize.define('Responsavei', {
         allowNull: true
     }
 })
-
+    //Tabela Idoso
 const Idoso = db.sequelize.define('Idoso', {
     ome: {
         type: db.Sequelize.STRING,
